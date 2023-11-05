@@ -1,0 +1,50 @@
+body {
+    background-color: #726A5A;
+    font-family: "Ubuntu Mono", monospace;
+    color: #1A1F1F;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.navriba{
+    background-color: #5c616b;
+    overflow: hidden;
+}
+.navriba p {
+    font-size: 24px;
+}
+.navriba ul {
+    float: right;
+
+}
+.navriba ul a {
+    float: left;
+    color: #e5ccca;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+.navriba ul.active{
+    background-color: #726A5A;
+    color: #1A1F1F;
+}
+
+.header-logo{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    color: red;
+}
+.filter-black{
+    filter: invert(8%) sepia(8%) saturate(1021%) hue-rotate(131deg) brightness(96%) contrast(90%);
+}
