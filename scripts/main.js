@@ -1,14 +1,3 @@
-const myHeading = document.querySelector("h1");
-
-myHeading.onclick = () => {
-    const myText = myHeading.textContent;
-    if (myText === "Programmeerimiskeeli tutvustav lehekülg") {
-        myHeading.textContent = "Easter egg";
-    } else {
-        myHeading.textContent = "Programmeerimiskeeli tutvustav lehekülg";    
-    }
-}
-
 const toggleSwitch = document.getElementById("dark-mode-toggle"); 
 
 function switchBackround() {
@@ -21,7 +10,6 @@ function switchBackround() {
         body.style.backgroundColor = "#726A5A";
         body.style.color = "#1A1F1F";
     }
-
 }
 
 toggleSwitch.addEventListener("change", switchBackround);
