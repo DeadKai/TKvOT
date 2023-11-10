@@ -8,3 +8,16 @@ myHeading.onclick = () => {
         myHeading.textContent = "Programmeerimiskeeli tutvustav lehekülg";    
     }
 }
+
+const toggleSwitch = document.getElementById("dark-mode-toggle"); 
+
+function switchBackround() {
+    if (toggleSwitch.checked) {
+        document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+    }
+
+}
+
+toggleSwitch.addEventListener("change", switchBackround);
