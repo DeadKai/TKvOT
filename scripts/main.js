@@ -13,9 +13,13 @@ const toggleSwitch = document.getElementById("dark-mode-toggle");
 
 function switchBackround() {
     if (toggleSwitch.checked) {
-        document.documentElement.setAttribute("data-theme", "dark");
+        var body = document.body;
+        body.style.backgroundColor = "#5C616B";
+        body.style.color = "#E5CCCA";
     } else {
-        document.documentElement.setAttribute("data-theme", "light");
+        var body = document.body;
+        body.style.backgroundColor = "#726A5A";
+        body.style.color = "#1A1F1F";
     }
 
 }
