@@ -10,7 +10,6 @@ function switchBackround() {
         body.style.backgroundColor = "#726A5A";
         body.style.color = "#1A1F1F";
     }
-
 }
 
 toggleSwitch.addEventListener("change", switchBackround);
