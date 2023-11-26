@@ -55,7 +55,8 @@ a{
     text-align: center;
     font-size: 20px;
     margin-top: 20px;
-    padding: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 a:hover{
@@ -69,3 +70,25 @@ a:hover{
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.language img {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.language-details {
+    flex: 1;
+}
+
+.language {
+    border: 2px solid #1A1F1F;
+    border-radius: 10px;
+    padding: 20px;
+}
+
