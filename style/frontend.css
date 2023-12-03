@@ -5,18 +5,15 @@
 }
 .flex-container h3{
     float:left;
-    width: 900px;
+    position:relative;
+    bottom:40px;
+    width: 40%;
     font-size: 25px;
-    #text-shadow: 0px 0px 10px white,
-                 0px 0px 20px white,
-                 0px 0px 30px white,
-                 0px 0px 40px white;
-                 
 
 }
 iframe{
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     float: right;
     padding: 50px;
     border: 0;
