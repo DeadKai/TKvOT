@@ -1,24 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet'>
-    <title>uued ja tulevased</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Uued ja Tulevased</title>
 </head>
 <body>
     <div class="header">
         <a href="index.html"><img src="../img/code-solid.svg" alt="logo" class="filter-black header-logo"></a>
         <div class="header-links">
-            <a href="frontend.html">frontend keeled</a>
-            <a href="backend.html">backend keeled</a>
-            <a href="uued.html">uued ja tulevased keeled</a>
+            <a href="frontend.html">Frontend keeled</a>
+            <a href="backend.html">Backend keeled</a>
+            <a href="uued.html">Uued ja Tulevased keeled</a>
+        </div>
+        <!-- Dark mode toggle button with Font Awesome icons -->
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon" style="display:none;"></i>
+        </button>
+    </div>
+    <h1>Uued ja Tulevased</h1>
+    <div class="text-backend">
+        <p>
+            Tehnoloogia areng toob pidevalt kaasa uute programmeerimiskeelte teket, mis on mõeldud jõudluse, turvalisuse ja funktsionaalsuse suurendamiseks. Selliste keelte hulka kuuluvad näiteks Zig, Rust ja Mojo, mis pakuvad programmeerijatele uudseid võimalusi tarkvara arendamiseks.
+
+            selle veebilehekülje eesmärk on teha nendest programmeerimiskeeltest lühitutvustused, et aidata alustavatel programmeerijatel aru saada, kuidas need keeled võivad mõjutada nende tulevikku IT-valdkonnas. Selleks pakub see veebileht kiireid ülevaateid koos keelte oluliste omaduste, tugevuste ja nõrkustega. See info aitab arendajatel otsustada, milline keel võiks olla nende jaoks kõige sobivam, võttes arvesse nende eesmärke ja vajadusi.
+        
+        </p>
+    </div>
+
+    <!-- Programming Languages Section -->
+    <div class="programming-languages">
+        <h2>Programmeerimiskeeled</h2>
+
+        <!-- Language: Zig -->
+        <div class="language">
+            <img src="../img/zig-logo.png" alt="zig-logo">
+            <div class="language-details">
+                <h3>Zig</h3>
+                <p>
+                    Zig on süsteemiprogrammeerimise keel, mille lõi Andrew Kelley, toimides minimalistliku ja lihtsustatud järeltulijana C-keelele, lisades täiendavaid kaasaegseid funktsioone ja turvamehhanisme, kuid ilma teiste kaasaegsete keelte nõudmisi jooksuaegse turvalisuse osas. Zigil on lihtne lugemiseks voolujuhtimine, funktsioonikutsed, teekide import, muutujate deklareerimine ja Unicode'i tugi, loobudes makrodest ja eeltöötlusjuhistest. Selle kaasaegsed jooned hõlmavad kompileerimisaja generaalseid tüüpe ja uusi kompilaatori juhiseid tüübi peegelduse jaoks, samuti testimisraamistikku.
+
+                    Zig rõhutab koodi loetavust, hooldatavust ja tugevust, kasutades võimaluse korral tuttavaid kontseptsioone ja olemasolevat süntaksit. Eelkõige püüab see ennetada C-s tavalisi mäluga haldamisel tekkivaid vigu, rakendades valikulisi tüüpe turvalisema käsitsi mäluga haldamise jaoks, ilma jõudlust ohverdamata prügikorje või automaatse viite lugemisega.
+
+                    Zig hõlbustab ka ristkeelelist arendust C-ga, võimaldades importida C päiseid ja kasutada Zig koodi C projektides. Lisaks käsitleb see ristikompilatsiooni kui tuumfunktsiooni ja lubab tinglikku kompileerimist läbi comptime, märksõna kompileerimisaja koodi täitmiseks, võimaldades generaalseid tüüpe ja pardtüüpi koodi.
+
+                    Keel toetab madala taseme funktsioone, nagu pakitud struktuurid, suvalise laiusega täisarvud ja mitu näitajate tüüpi. Zig sisaldab ise-arendavat kompilaatorit alates versioonist 0.10, mis on väiksem ja tõhusam kui selle eelkäija. Zigi arendust jälgib mittetulundusühing Zig Software Foundation. Kuigi Zigil puudub ametlik paketihaldur, toetab see ristikompilatsiooni ja ristplatvormi arendamist, sealhulgas lauaarvutitele ja mobiilseadmetele.
+                </p>
+                <h4>Plussid:</h4>
+                <ul>
+                    <li>lihtsus ja minimalism</li>
+                    <li>ohutuse mehhanismid</li>
+                    <li>ühilduvus C keelega</li>
+                </ul>
+                <h4>Miinused:</h4>
+                <ul>
+                    <li>väike kogukond</li>
+                    <li>pole oma pakihaldurit</li>
+                    <li>õpimiskõver C arendajatel</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Language: Rust -->
+        <div class="language">
+            <img src="../img/rust-logo-512x512.png" alt="rust-logo">
+            <div class="language-details">
+                <h3>Rust</h3>
+                <p>
+                    Rust on mitmeotstarbeline programmeerimiskeel, mis on keskendunud jõudlusele, tüübi ohutusele ja paralleelsusele. Graydon Hoare loodud Mozilla Research'is 2006. aastal, on Rusti vastu võtnud ettevõtted nagu Amazon, Discord ja Microsoft ning toetab isegi Linuxi tuuma arendamist. Mälu ohutus ilma prügikogumiseta on märkimisväärne, Rust kasutab kompileerimisel viitamiste haldamiseks ja andmevõistluste ennetamiseks ainulaadset 'laenude kontrollijat'. Keel pakub tugevat jõudlust ja omadusi, mida on mõjutanud funktsionaalsed programmeerimiskeeled.
+
+                    Rusti väljendusrikas tüübisüsteem ja omandiõiguse mudel tagavad ressursside usaldusväärse haldamise, RAII mustriga ja ohutuse puuduvate null- või rippuvate viitadega. See pakub võimsaid abstraktsioone nullilise jooksva aja kuluga, mitmekülgset veakäsitlust ja edasijõudnud funktsioone nagu geneerika ja omadused polümorfismiks.
+
+                    Keel on kiirelt vastu võetud tänu oma innovaatilisele lähenemisele süsteemide programmeerimisele. Rusti juhib alates 2021. aastast Rust Foundation, mida toetab ettevõtete pidev toetus selle kasvu ja arendamise jaoks. Selle õitsva kogukonna ja põhjaliku tööriistakomplekti, sealhulgas Cargo ja Clippy, panus on toonud Rustile kõrgelt hinnatud ja armastatud programmeerimiskeelega staatuse arendajate seas.
+                </p>
+                <h4>Plussid:</h4>
+                <ul>
+                    <li>aktiivne kogukond</li>
+                    <li>mäluohutus</li>
+                    <li>Inkrementaalne kompileerimine</li>
+
+                </ul>
+                <h4>Miinused:</h4>
+                <ul>
+                    <li>suur õppimiskõver</li>
+                    <li>aeglane kompileerimis kiirus</li>
+                    <li>teiste keeltege integreerimine on keerukas</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Language: Mojo -->
+        <div class="language">
+            <img src="../img/mojo.png" alt="mojo-logo">
+            <div class="language-details">
+                <h3>Mojo</h3>
+                <p>
+                    Mojo on programmeerimiskeel, mis on välja töötatud tehisintellekti arendamiseks MLIR kompilaatori raamistikus ning seda peetakse Pythoni laienduseks, mistõttu on seda hüütud ka "Python++". See tehti kättesaadavaks brauserites läbi Jupyter märkmike mais 2023, hiljem Linuxis ja macOS-is, pakkudes Pythoniga ühilduvust, et hõlbustada arendajate üleminekut. Mojo loodi Modular ettevõtte poolt, mille asutasid Chris Lattner ja Tim Davis, ning see on varustatud hübriidse tüübisüsteemiga, mis võimaldab soovi korral kasutada jõudluse tõstmiseks staatilist tüübitüüpi ning kaasas on kompilaator ja jooksuaegasüsteem. Kuigi see pole veel avatud lähtekoodiga, on olemas kavad selleks. Mojo käsitleb Pythoni jõudluse ja kasutuselevõtu probleeme ning tutvustab madalatasemelise programmeerimise funktsioone, kuigi see pole selles faasis täielikult allikakoodiga ühilduv Python 3-ga. Sellel on sarnasusi süntaksiga nii Swifti kui ka Rusti keeltega ning see pakub SDK-d arendamiseks kohalikel süsteemidel teatud platvormidel, lisaks Visual Studio Code laiendusele ja võimalusele arendada veebipõhises mänguväljakus.
+                </p>
+                <h4>Plussid:</h4>
+                <ul>
+                    <li>suurem jõudlus</li>
+                    <li>ühilduvus pythoniga</li>
+                    <li>mäluhaldus</li>
+                </ul>
+                <h4>Miinused:</h4>
+                <ul>
+                    <li>pole veel pythoniga täielikult ühilduv</li>
+                    <li>pole avatud lähtekoodiga</li>
+                    <li>arendus on algfaasis</li>
+
+                </ul>
+            </div>
         </div>
     </div>
-    <h1>uued ja tulevased</h1>
-    <img src="../img/zig-logo.png" alt="zig-logo">
-    <img src="../img/rust-logo-512x512.png" alt="rust-logo">
-    <img src="../img/mojo.png" alt="mojo-logo">
+
+    <div class="footer">
+        <p>©2023 kõik õigused kaitstud</p>
+    </div>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

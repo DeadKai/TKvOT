@@ -1,15 +1,34 @@
-const toggleSwitch = document.getElementById("dark-mode-toggle"); 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const toggle = document.getElementById("dark-mode-toggle");
+    const iconMoon = toggle.querySelector('.fa-moon');
+    const iconSun = toggle.querySelector('.fa-sun');
+    const body = document.body;
 
-function switchBackround() {
-    if (toggleSwitch.checked) {
-        var body = document.body;
-        body.style.backgroundColor = "#5C616B";
-        body.style.color = "#E5CCCA";
-    } else {
-        var body = document.body;
-        body.style.backgroundColor = "#726A5A";
-        body.style.color = "#1A1F1F";
+    // Check if dark mode preference is stored in localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    // Set initial dark mode state
+    if (isDarkMode) {
+        body.classList.add('dark-mode');
+        iconMoon.style.display = 'inline-block';
+        iconSun.style.display = 'none';
     }
-}
 
-toggleSwitch.addEventListener("change", switchBackround);
+    toggle.addEventListener('click', function() {
+        // Toggle dark mode class on body
+        body.classList.toggle('dark-mode');
+
+        // Update icon visibility
+        if (body.classList.contains('dark-mode')) {
+            iconMoon.style.display = 'inline-block';
+            iconSun.style.display = 'none';
+            // Store dark mode preference in localStorage
+            localStorage.setItem('darkMode', 'true');
+        } else {
+            iconMoon.style.display = 'none';
+            iconSun.style.display = 'inline-block';
+            // Remove dark mode preference from localStorage
+            localStorage.setItem('darkMode', 'false');
+        }
+    });
+});
