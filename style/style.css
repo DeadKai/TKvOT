@@ -72,12 +72,6 @@ a:hover{
     padding-right: 10px;
 }
 
-.language {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
 .language img {
     width: 200px;
     margin-right: 20px;
@@ -87,11 +81,7 @@ a:hover{
     flex: 1;
 }
 
-.language {
-    border: 2px solid #1A1F1F;
-    border-radius: 10px;
-    padding: 20px;
-}
+
 
 /* Dark mode styling */
 body.dark-mode {
