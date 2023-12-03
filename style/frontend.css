@@ -46,12 +46,3 @@ iframe:hover{
                 0px 0px 40px white;
     
 }
-
-.hidden {
-    opacity: 0;
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-}
