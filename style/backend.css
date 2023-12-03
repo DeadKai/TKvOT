@@ -1,8 +1,14 @@
-.text-backend {
+.keel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
     border: 2px solid #1A1F1F;
     border-radius: 10px;
     padding: 20px;
+
 }
-.keeled {
-    
+
+.keel img {
+    width: 128px; /* Set the desired width */
+    height: 128px; /* Maintain aspect ratio */
 }
