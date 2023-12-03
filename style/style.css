@@ -117,3 +117,39 @@ a:hover{
     padding: 20px;
 }
 
+/* Dark mode styling */
+body.dark-mode {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+body.dark-mode .header {
+    background: #34495e;
+}
+
+body.dark-mode .header a {
+    color: #ecf0f1;
+}
+
+body.dark-mode .header .header-logo {
+    filter: invert(1);
+}
+
+/* Button styling */
+.dark-mode-toggle {
+    margin-left: 0;
+    padding: 0;
+    font-size: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: inherit;
+}
+
+.dark-mode-toggle .fa-sun {
+    color: #1A1F1F;
+}
+
+.dark-mode-toggle .fa-moon {
+    color: #ecf0f1;
+}

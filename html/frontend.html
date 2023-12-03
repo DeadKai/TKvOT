@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <link rel="frontend stylesheet" type="text/css" href="../style/frontend.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../style/style.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>frontend</title>
 </head>
 <body>
@@ -16,23 +17,63 @@
             <a href="backend.html">backend keeled</a>
             <a href="uued.html">uued ja tulevased keeled</a>
         </div>
+        <!-- Dark mode toggle button with Font Awesome icons -->
+        <button id="dark-mode-toggle" class="dark-mode-toggle">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon" style="display:none;"></i>
+        </button>
     </div>
     <h1>frontend</h1>
     <div class="algustext">
         <h2>Mis on frontend arenduskeelte eesmärk?</h2>
         <p>Frontend arenduskeeli kasutavad üldiselt veebiarendajad, et luua veebilehtede kasutajaliideseid ning kujundada lõppkasutaja kogemust.</p>
-        <p>Üheks frontend arenduskeeleks on HTML, see keel ei ole programmeerimiskeel, vaid märgistuskeel (markup language).</p>
+        <p>Ühed peamised frontend arenduskeeled on HTML ja CSS. Need keeled ei ole programmeerimiskeeled, vaid märgistuskeeled (markup language).</p>
         <p>Märgistuskeel on keel, mida kasutatakse infostruktuuri määratlemiseks teksti või andmete sees.</p>
         <p>Seda tüüpi keeli kasutatakse laialdaselt programmeerimises, veeibarenduses, andmevahetuses ja muudes valdkondades, kus täpne struktuur on oluline.</p>
-        <div class="htmlpilt">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML pilt">
-        </div>
+        <p>Frontend arenduses kasutatakse hetkel maailmas lisaks HTML ja CSS keeltele lisaks JavaScript'i.</p>
+        <p>Nendest teemadest tuleb nüüd juttu:</p>
     </div>
-    <div class="csspilt">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS pilt">
+    <div class="flex-container">
+
+        <div class=pilthtml>
+            <a href="https://et.wikipedia.org/wiki/HTML">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1024px-HTML5_logo_and_wordmark.svg.png" alt="HTML pilt">
+            </a>
+        <div class="tekst1">
+            <h3>HTML (Hypertext Markup Language) on veebilehtede ehituskivi, mis määratleb, kuidas veebilehed struktureeritud ja organiseeritud on. Seda kasutatakse elementide märgistamiseks, alates pealkirjadest (&lt;h1&gt;, &lt;h2&gt;) ja lõikudest (&lt;p&gt;) kuni piltide (&lt;img&gt;) ja lingideni. HTML-i abil saab luua loendeid, tabelite struktuure ning integreerida meediaelemente. See annab brauserile juhised, kuidas kuvada lehekülge ja jagada sisu erinevate komponentide vahel. </h3>
+        </div>
+
+        <iframe src="https://www.youtube.com/embed/ok-plXXHlWw?si=wnuI2ieTlgiYcwzR" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        </div>
+
+        <div class=piltcss>
+            <a href="https://et.wikipedia.org/wiki/CSS">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/800px-CSS3_logo_and_wordmark.svg.png" alt="CSS pilt">
+            </a>
+        <div class="tekst2">
+            <h3>CSS (Cascading Style Sheets) täiustab HTML-i, võimaldades arendajatel eraldada veebilehe struktuuri kujundusest. See keerukam keel võimaldab määratleda värve, fondistiile, mõõtmeid ja paigutust. CSS kasutab selektoreid ja reegleid, et kohandada stiilielemente erinevatele HTML-elementidele, tagades konsistentsuse ja visuaalse atraktiivsuse. Tulemuseks on professionaalne välimus, mis parandab oluliselt kasutajakogemust.</h3>
+        </div>
+        <iframe src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=1wKZgdRe6maZbf-W" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <div class=piltjavascript>
+            <a href="https://et.wikipedia.org/wiki/JavaScript">
+                <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png" alt="Javascript logo">
+            </a>
+        <div class="tekst3">
+            <h3>JavaScript on interaktiivsuse ja dünaamika loomiseks kasutatav skriptikeel. Töötades otse kasutaja brauseris, võimaldab see mitmesuguseid tegevusi, nagu HTML-i ja CSS-i manipuleerimine, kasutaja tegevustele reageerimine, päringute saatmine serverile (AJAX), animatsioonide loomine ja kliendipoolsete andmete haldamine. JavaScript on oluline tänapäevaste veebirakenduste arendamiseks, pakkudes sujuvat ja kasutajasõbralikku kogemust.</h3>
+        </div>
+        <iframe src="https://www.youtube.com/embed/DHjqpvDnNGE?si=JdQFvSjuP8w54OYP" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <h2>Kokkuvõte</h2>
+        <p>Koos moodustavad HTML, CSS ja JavaScript tugeva aluse täisväärtuslikuks veebiarenduseks, võimaldades arendajatel luua mitmekülgseid, kaasaegseid ja funktsionaalseid veebilehti, mis vastavad nii tehnilistele kui ka esteetilistele nõudmistele.</p>
+
+
     </div>
     <div class="footer">
         <p>©2023 kõik õigused kaitstud</p>
     </div>
+    <script src="../scripts/main.js"></script>
 </body>
 </html>

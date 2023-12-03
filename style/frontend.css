@@ -1,6 +1,48 @@
-.htmlpilt img{
-    width: 200px;
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    
 }
-.csspilt img {
-    width: 150px
+.flex-container h3{
+    float:left;
+    position:relative;
+    bottom:40px;
+    width: 40%;
+    font-size: 25px;
+
+}
+iframe{
+    width: 300px;
+    height: 150px;
+    float: right;
+    padding: 50px;
+    border: 0;
+    margin: auto;
+}
+iframe:hover{
+    scale: 120%;
+}
+
+
+
+.flex-container img{
+    height: 300px;
+    width: 200px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    float: left;
+    background-color: #8E8B8D;
+    object-fit: cover;
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-right: 30px;
+}
+
+.flex-container img:hover{
+    scale: 110%;
+    box-shadow: 0px 0px 10px white,
+                0px 0px 20px white,
+                0px 0px 30px white,
+                0px 0px 40px white;
+    
 }
