@@ -48,6 +48,7 @@ a{
     font-size: 20px;
     margin: 0 10px;
     padding: 0;
+    transition: color 0.2s ease;
 
 }
 
@@ -63,6 +64,30 @@ a:hover{
     color: #8E8B8D;
 }
 
+#dark-mode-toggle {
+    display: none;
+}
+
+#dark-mode-toggle:checked + .switch-image {
+    width: 16px;
+    height: 36px;
+    background-image: url('../img/moon.png'); 
+}
+
+.switch-image {
+    display: inline-block;
+    width: 16px;
+    height: 36px;
+    background-size: cover;
+    background-image: url('../img/sun.png'); 
+    border-radius: 10%;
+    transition: background-color 0.2s ease;
+}
+
+
+.switch-image:hover{
+    background-color: #8E8B8D;
+}
 .filter-black{
     filter: invert(8%) sepia(8%) saturate(1021%) hue-rotate(131deg) brightness(96%) contrast(90%);
 }
