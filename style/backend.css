@@ -9,6 +9,52 @@
 }
 
 .keel img {
-    width: 128px; /* Set the desired width */
-    height: 128px; /* Maintain aspect ratio */
+    width: 128px; 
+    height: 128px; 
+}
+
+.konteiner {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.koodi-box {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.koodi-pealis {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #444;
+}
+.koodi-tiitel {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.koodi-sisu {
+    padding: 10px;
+    color: #fff;
+}
+
+pre {
+    background: #363636;
+    border: 1px solid #444;
+    border-left: 3px solid #028A0F;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
 }
