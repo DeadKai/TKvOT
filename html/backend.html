@@ -32,7 +32,9 @@
         <p>Backend keeles kirjutatud koodi kasutab server kasutatavas programmis või veebilehel andmete protsessimiseks ja andmebaasidega suhtlemiseks, hoiab keskkonda rünnakute eest kaitstuna või suhtleb teiste seadmetega jms. 
             Backend on vundament mille peale saab kõike ehitada ja tänapäeval on eriti oluline, et sellele ei jäetaks mingeid auke sisse, mida hiljem parandada on väga keeruline. </p>    
         <div class="keel">
+            <a href="https://www.ruby-lang.org/en/">
             <img src="../img/ruby.png" alt="ruby">
+            </a>
             <div class="text-backend">
                 <h3>RUBY</h3>
                 <p>Pealtnäha lihtne keel, aga piisavalt kompleksne seestpoolt nagu on ka inimene. Ruby keel on funktsionaalne ja samas kergesti loetav.
@@ -42,7 +44,9 @@
             </div>
         </div>
         <div class="keel">
-            <img src="../img/php.png" alt="ruby">
+            <a href="https://www.php.net/">
+            <img src="../img/php.png" alt="php">
+            </a>
             <div class="text-backend">
                 <h3>PHP</h3>
                 <p>Keel on loodud veebiarenduseks ja on üks esimesi neist. Kliendi päringud töödeltakse veebriserveris ja saadetakse tagasi HTML failid kliendile. Selle syntax on sarnane Java-ga, mis peaks Tartu Ülikooli tudengile lõpetamise ajaks üsnagi selge olema.
@@ -52,7 +56,9 @@
             </div>
         </div>
         <div class="keel">
-            <img src="../img/java.png" alt="ruby">
+            <a href="https://dev.java/">
+            <img src="../img/java.png" alt="java">
+            </a>    
             <div class="text-backend">
                 <h3>JAVA</h3>
                 <p>Java on tuntud kui objekt-orienteeritud programmeerimise keel, mis on laialt kasutusel tarkvara arenduses. Javat kasutatakse ka väga palju programmeerimse õpetamisel. 
@@ -67,8 +73,9 @@
         <div class="koodi-box" id="ruby-box">
             <div class="koodi-pealis">
                 <span class="koodi-tiitel">RUBY</span>
+                <button data-content-id="kopeeri-ruby" class="koodi-btn">Kopeeri</button>
             </div>
-            <div class="koodi-sisu">
+            <div class="koodi-sisu" id="kopeeri-ruby">
                 <pre><code>
 class Numeric
     def liida(x)
@@ -85,8 +92,9 @@ puts "Ruby: y on nüüd võrdne #{y}"
         <div class="koodi-box" id="php-box">
             <div class="koodi-pealis">
                 <span class="koodi-tiitel">PHP</span>
+                <button data-content-id="kopeeri-php" class="koodi-btn">Kopeeri</button>
             </div>
-            <div class="koodi-sisu">
+            <div class="koodi-sisu" id="kopeeri-php">
                 <pre><code>
 ?php
 $tsitaadid = [
@@ -108,8 +116,9 @@ echo "{$juhuslikTsitaat}";
         <div class="koodi-box" id="java-box">
             <div class="koodi-pealis">
                 <span class="koodi-tiitel">JAVA</span>
+                <button data-content-id="kopeeri-java" class="koodi-btn">Kopeeri</button>
             </div>
-            <div class="koodi-sisu">
+            <div class="koodi-sisu" id="kopeeri-java">
                 <pre><code>
 public class Laul {
 
