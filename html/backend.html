@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <title>backend</title>
 </head>
 <body>
+    <!-- Menüüriba pealis, mille abil saab erinevatele veebilehetele ligi ja ka logo, mis viib igal leheküljel tagasi avalehele -->
     <div class="header">
         <a href="index.html"><img src="../img/code-solid.svg" alt="logo" class="filter-black header-logo"></a>
         <div class="header-links">
@@ -18,12 +19,13 @@
             <a href="backend.html">backend keeled</a>
             <a href="uued.html">uued ja tulevased keeled</a>
         </div>
-        <!-- Dark mode toggle button with Font Awesome icons -->
+        <!-- light/dark mode lüliti nupp, mis asub lehekülje üleval paremal ja millele vajutades vahetub teema -->
         <button id="dark-mode-toggle" class="dark-mode-toggle">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon" style="display:none;"></i>
         </button>
     </div>
+    <!-- Keelte tutvustus erinevates boksides -->
     <h1>backend</h1>
     <div class="keeled">
         <h2>Backend keel?</h2>
@@ -60,6 +62,7 @@
             </div>
         </div>
     </div>
+    <!-- Keeli tutvustav koodi kastid, kus igas kastis on väike koodijupp vastavalt keelele -->
     <div class="konteiner">
         <div class="koodi-box" id="ruby-box">
             <div class="koodi-pealis">
