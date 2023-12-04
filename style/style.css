@@ -7,6 +7,11 @@ body {
     padding: 20px;
 }
 
+* {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 h1 {
     font-size: 48px;
     font-weight: bold;
@@ -68,10 +73,6 @@ a:hover{
 .filter-black{
     filter: invert(8%) sepia(8%) saturate(1021%) hue-rotate(131deg) brightness(96%) contrast(90%);
 }
-* {
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 .language img {
     width: 200px;
@@ -82,9 +83,6 @@ a:hover{
     flex: 1;
 }
 
-
-
-/* Dark mode stiil */
 body.dark-mode {
     background: #2c3e50;
     color: #ecf0f1;
@@ -105,6 +103,13 @@ body.dark-mode .header a {
 
 body.dark-mode .header .header-logo {
     filter: invert(1);
+}
+body.dark-mode .koodi-sisu code {
+    color: #ecf0f1
+}
+
+body.dark-mode .koodi-pealis {
+    color: #ecf0f1
 }
 
 /* Dark mode nupp */

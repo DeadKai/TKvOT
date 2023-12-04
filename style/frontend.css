@@ -7,6 +7,7 @@
 
     
 }
+
 .flex-container h3{
     float:left;
     position:relative;
@@ -15,6 +16,7 @@
     font-size: 25px;
 
 }
+
 iframe{
     width: 300px;
     height: 150px;
@@ -23,11 +25,10 @@ iframe{
     border: 0;
     margin: auto;
 }
+
 iframe:hover{
     scale: 120%;
 }
-
-
 
 .flex-container img{
     height: 300px;

@@ -35,7 +35,7 @@
                 <h3>RUBY</h3>
                 <p>Pealtnäha lihtne keel, aga piisavalt kompleksne seestpoolt nagu on ka inimene. Ruby keel on funktsionaalne ja samas kergesti loetav.
                     Arendati algselt backend keeleks, aga on aastate jooksul arenenud sedaviisi, et nüüd on võimalik arendajal kirjutada sellega valmis nii frontend kui ka backend. Seda võimalust kasutavad nüüd mitmed suured firmad nagu ka Github.
-                    Ruby keeles on kogu sisestatud informatsioon objekt s.t kõike on võimalik muuta enda nägemuse järgi. Näiteks saad korrutamist ka ümber defineerida sõnaga * -> pluss.
+                    Ruby keeles on kogu sisestatud informatsioon objekt s.t kõike on võimalik muuta enda nägemuse järgi. Näiteks saad liitmist ka ümber defineerida sõnaga + -> pluss.
                 </p>
             </div>
         </div>
@@ -60,9 +60,74 @@
             </div>
         </div>
     </div>
+    <div class="konteiner">
+        <div class="koodi-box" id="ruby-box">
+            <div class="koodi-pealis">
+                <span class="koodi-tiitel">RUBY</span>
+            </div>
+            <div class="koodi-sisu">
+                <pre><code>
+class Numeric
+    def liida(x)
+        self.+(x)
+    end
+end
+                  
+y = 5.liida(6)
+puts "Ruby: y on nüüd võrdne #{y}"
+                  </code></pre>
+            </div>
+        </div>
+
+        <div class="koodi-box" id="php-box">
+            <div class="koodi-pealis">
+                <span class="koodi-tiitel">PHP</span>
+            </div>
+            <div class="koodi-sisu">
+                <pre><code>
+?php
+$tsitaadid = [
+    "Ära oota, kuni raud on kuum, 
+    vaid tee see kuumaks, lüües. - William Butler Yeats",
+    "Elu on see, mis juhtub, 
+    kui sa oled hõivatud teiste plaanide tegemisega. - John Lennon",
+    "Alati tundub võimatu, kuni see on tehtud. - Nelson Mandela"
+];
+
+$juhuslikTsitaat = $tsitaadid[array_rand($tsitaadid)];
+
+echo "{$juhuslikTsitaat}";
+?
+                </code></pre>
+            </div>
+        </div>
+
+        <div class="koodi-box" id="java-box">
+            <div class="koodi-pealis">
+                <span class="koodi-tiitel">JAVA</span>
+            </div>
+            <div class="koodi-sisu">
+                <pre><code>
+public class Laul {
+
+    public static void main(String[] args) {
+        for (int pudelid = 99; pudelid > 0; pudelid--) {
+            System.out.println(pudelid + " pudelit õlut seinakapis,");
+            System.out.println(pudelid + " pudelit õlut.");
+            System.out.println("Üks võetakse maha, antakse edasi,");
+            System.out.println((pudelid - 1) + " pudelit õlut alles.\n");
+        }
+        System.out.println("Enam pole ühtegi pudelit õlut seinakapis!");
+    }
+}        
+                </code></pre>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <p>©2023 kõik õigused kaitstud</p>
     </div>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/backend.js"></script>
 </body>
 </html>
