@@ -11,6 +11,7 @@
     <title>Uued ja Tulevased</title>
 </head>
 <body>
+    <!-- Menüüriba pealis, mille abil saab erinevatele veebilehetele ligi ja ka logo, mis viib igal leheküljel tagasi avalehele -->
     <div class="header">
         <a href="index.html"><img src="../img/code-solid.svg" alt="logo" class="filter-black header-logo"></a>
         <div class="header-links">
@@ -18,13 +19,13 @@
             <a href="backend.html">backend keeled</a>
             <a href="uued.html">uued ja tulevased keeled</a>
         </div>
-        <!-- Dark mode toggle button with Font Awesome icons -->
+        <!-- light/dark mode lüliti nupp, mis asub lehekülje üleval paremal ja millele vajutades vahetub teema -->
         <button id="dark-mode-toggle" class="dark-mode-toggle">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon" style="display:none;"></i>
         </button>
     </div>
-    <h1>Uued ja Tulevased</h1>
+    <h1>uued ja tulevased</h1>
     <div class="text-backend">
         <p>
             Tehnoloogia areng toob pidevalt kaasa uute programmeerimiskeelte teket, mis on mõeldud jõudluse, turvalisuse ja funktsionaalsuse suurendamiseks. Selliste keelte hulka kuuluvad näiteks Zig, Rust ja Mojo, mis pakuvad programmeerijatele uudseid võimalusi tarkvara arendamiseks.
@@ -34,23 +35,15 @@
         </p>
     </div>
 
-    <!-- Programming Languages Section -->
     <div class="programming-languages">
         <h2>Programmeerimiskeeled</h2>
 
-        <!-- Language: Zig -->
         <div class="language">
             <img src="../img/zig-logo.png" alt="zig-logo">
             <div class="language-details">
                 <h3>Zig</h3>
                 <p>
-                    Zig on süsteemiprogrammeerimise keel, mille lõi Andrew Kelley, toimides minimalistliku ja lihtsustatud järeltulijana C-keelele, lisades täiendavaid kaasaegseid funktsioone ja turvamehhanisme, kuid ilma teiste kaasaegsete keelte nõudmisi jooksuaegse turvalisuse osas. Zigil on lihtne lugemiseks voolujuhtimine, funktsioonikutsed, teekide import, muutujate deklareerimine ja Unicode'i tugi, loobudes makrodest ja eeltöötlusjuhistest. Selle kaasaegsed jooned hõlmavad kompileerimisaja generaalseid tüüpe ja uusi kompilaatori juhiseid tüübi peegelduse jaoks, samuti testimisraamistikku.
-
-                    Zig rõhutab koodi loetavust, hooldatavust ja tugevust, kasutades võimaluse korral tuttavaid kontseptsioone ja olemasolevat süntaksit. Eelkõige püüab see ennetada C-s tavalisi mäluga haldamisel tekkivaid vigu, rakendades valikulisi tüüpe turvalisema käsitsi mäluga haldamise jaoks, ilma jõudlust ohverdamata prügikorje või automaatse viite lugemisega.
-
-                    Zig hõlbustab ka ristkeelelist arendust C-ga, võimaldades importida C päiseid ja kasutada Zig koodi C projektides. Lisaks käsitleb see ristikompilatsiooni kui tuumfunktsiooni ja lubab tinglikku kompileerimist läbi comptime, märksõna kompileerimisaja koodi täitmiseks, võimaldades generaalseid tüüpe ja pardtüüpi koodi.
-
-                    Keel toetab madala taseme funktsioone, nagu pakitud struktuurid, suvalise laiusega täisarvud ja mitu näitajate tüüpi. Zig sisaldab ise-arendavat kompilaatorit alates versioonist 0.10, mis on väiksem ja tõhusam kui selle eelkäija. Zigi arendust jälgib mittetulundusühing Zig Software Foundation. Kuigi Zigil puudub ametlik paketihaldur, toetab see ristikompilatsiooni ja ristplatvormi arendamist, sealhulgas lauaarvutitele ja mobiilseadmetele.
+                    Zig on süsteemiprogrammeerimise keel, loodud lihtsa alternatiivina C-keelele. See lisab kaasaegseid funktsioone ja turvamehhanisme, säilitades samas lihtsa loetavuse. Zig toetab voolujuhtimist, funktsioonikutseid, teekide importi ja Unicode'i tuge. Keeles on kompileerimisaja üldtüübid, uued juhised tüübi peegelduseks ja sisseehitatud testimisraamistik. Zig rõhutab koodi loetavust, hooldatavust ja turvalisust, eristudes teistest keeltest. See ennetab mäluga seotud vigu, võimaldades samal ajal ristkeelelist arendust C-ga. Zig toetab madala taseme funktsioone ja sisaldab väikest, tõhusat ise-arendavat kompilaatorit. Arendust toetab Zig Software Foundation, hoolimata ametliku paketihalduri puudumisest, võimaldades ristikompilatsiooni ja ristplatvormi arendust.
                 </p>
                 <h4>Plussid:</h4>
                 <ul>
@@ -67,7 +60,6 @@
             </div>
         </div>
 
-        <!-- Language: Rust -->
         <div class="language">
             <img src="../img/rust-logo-512x512.png" alt="rust-logo" id="rust-logo">
             <div class="language-details">
@@ -95,7 +87,6 @@
             </div>
         </div>
 
-        <!-- Language: Mojo -->
         <div class="language">
             <img src="../img/mojo.png" alt="mojo-logo">
             <div class="language-details">

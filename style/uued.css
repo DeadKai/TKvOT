@@ -10,3 +10,12 @@
 .rotating {
     animation: rotateLogo 2s linear forwards;
 }
+
+.language {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #1A1F1F;
+    border-radius: 10px;
+    padding: 20px;
+}

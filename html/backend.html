@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/backend.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet'>
     <link rel="icon" type="image/x-icon" href="../img/code-solid.svg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>backend</title>
 </head>
 <body>
+    <!-- Menüüriba pealis, mille abil saab erinevatele veebilehetele ligi ja ka logo, mis viib igal leheküljel tagasi avalehele -->
     <div class="header">
         <a href="index.html"><img src="../img/code-solid.svg" alt="logo" class="filter-black header-logo"></a>
         <div class="header-links">
@@ -17,38 +19,118 @@
             <a href="backend.html">backend keeled</a>
             <a href="uued.html">uued ja tulevased keeled</a>
         </div>
-        <!-- Dark mode toggle button with Font Awesome icons -->
+        <!-- light/dark mode lüliti nupp, mis asub lehekülje üleval paremal ja millele vajutades vahetub teema -->
         <button id="dark-mode-toggle" class="dark-mode-toggle">
             <i class="fas fa-sun"></i>
             <i class="fas fa-moon" style="display:none;"></i>
         </button>
     </div>
+    <!-- Keelte tutvustus erinevates boksides -->
     <h1>backend</h1>
     <div class="keeled">
-        <p>Backend keel on see, mida kasutab server sinu kasutatavas programmis või veebilehel andmete protsessimiseks ja andmebaasidega suhtlemiseks, hoiab keskkonda rünnakute eest kaitstuna või suhtleb teiste seadmetega jms. 
+        <h2>Backend keel?</h2>
+        <p>Backend keeles kirjutatud koodi kasutab server kasutatavas programmis või veebilehel andmete protsessimiseks ja andmebaasidega suhtlemiseks, hoiab keskkonda rünnakute eest kaitstuna või suhtleb teiste seadmetega jms. 
             Backend on vundament mille peale saab kõike ehitada ja tänapäeval on eriti oluline, et sellele ei jäetaks mingeid auke sisse, mida hiljem parandada on väga keeruline. </p>    
-        <h3>RUBY</h3>
-        <div class="text-backend">
-            <p>Pealtnäha lihtne keel, aga piisavalt kompleksne seestpoolt nagu on ka inimene. Ruby keel on funktsionaalne ja samas kergesti loetav.
-                Arendati algselt backend keeleks, aga on aastate jooksul arenenud sedaviisi, et nüüd on võimalik arendajal kirjutada sellega valmis nii frontend kui ka backend. Seda võimalust kasutavad nüüd mitmed suured firmad nagu ka Github.
-                Ruby keeles on kogu sisestatud informatsioon objekt s.t kõike on võimalik muuta enda nägemuse järgi. Näiteks saad korrutamist ka ümber defineerida sõnaga * -> pluss.</p>
-        <h3>PHP</h3>
-        <div  class="text-backend">
-            <p>Keel on loodud veebiarenduseks ja on üks esimesi neist. Kliendi päringud töödeltakse veebriserveris ja saadetakse tagasi HTML failid kliendile. Selle syntax on sarnane Java-ga, mis peaks Tartu Ülikooli tudengile lõpetamise ajaks üsnagi selge olema.
-                Kuna tegemist on vana keelega, siis seda kasutavad ka seni suured hiiud nagu Wikipedia, Wordpress ja ka erinevad frameworkid. PHP tugevus on tema ühilduvus erinevate andmebaasidega: MySQL, PostGreSQL. 
-                PHP logoks on elevant, mis tuleneb prantsuse keelsest sõnast éléphant -> elePHPant ja seepärast elevant on ka PHP maskott.</p>
+        <div class="keel">
+            <img src="../img/ruby.png" alt="ruby">
+            <div class="text-backend">
+                <h3>RUBY</h3>
+                <p>Pealtnäha lihtne keel, aga piisavalt kompleksne seestpoolt nagu on ka inimene. Ruby keel on funktsionaalne ja samas kergesti loetav.
+                    Arendati algselt backend keeleks, aga on aastate jooksul arenenud sedaviisi, et nüüd on võimalik arendajal kirjutada sellega valmis nii frontend kui ka backend. Seda võimalust kasutavad nüüd mitmed suured firmad nagu ka Github.
+                    Ruby keeles on kogu sisestatud informatsioon objekt s.t kõike on võimalik muuta enda nägemuse järgi. Näiteks saad liitmist ka ümber defineerida sõnaga + -> pluss.
+                </p>
+            </div>
         </div>
-        <h3>JAVA</h3>
-        <div class="text-backend">
-            <p>Java on tuntud kui objekt-orienteeritud programmeerimise keel, mis on laialt kasutusel tarkvara arenduses. Javat kasutatakse ka väga palju programmeerimse õpetamisel. 
-                Keelel on suur kogu erinevaid raamistike ja teekide kogu. Javat on võimalik jooksutada üldiselt kõikjal ja väga erinevate asjade jaoks ka mängude arendamiseks või kiipkaarti lahendustes.
-                Javat kasutatakse ka suure jõudlusega andmetöötluses andmete salvestamiseks ja protsessimiseks.
-            </p>
+        <div class="keel">
+            <img src="../img/php.png" alt="ruby">
+            <div class="text-backend">
+                <h3>PHP</h3>
+                <p>Keel on loodud veebiarenduseks ja on üks esimesi neist. Kliendi päringud töödeltakse veebriserveris ja saadetakse tagasi HTML failid kliendile. Selle syntax on sarnane Java-ga, mis peaks Tartu Ülikooli tudengile lõpetamise ajaks üsnagi selge olema.
+                    Kuna tegemist on vana keelega, siis seda kasutavad ka seni suured hiiud nagu Wikipedia, Wordpress ja ka erinevad frameworkid. PHP tugevus on tema ühilduvus erinevate andmebaasidega: MySQL, PostGreSQL. 
+                    PHP logoks on elevant, mis tuleneb prantsuse keelsest sõnast éléphant -> elePHPant ja seepärast elevant on ka PHP maskott.
+                </p>
+            </div>
+        </div>
+        <div class="keel">
+            <img src="../img/java.png" alt="ruby">
+            <div class="text-backend">
+                <h3>JAVA</h3>
+                <p>Java on tuntud kui objekt-orienteeritud programmeerimise keel, mis on laialt kasutusel tarkvara arenduses. Javat kasutatakse ka väga palju programmeerimse õpetamisel. 
+                    Keelel on suur kogu erinevaid raamistike ja teekide kogu. Javat on võimalik jooksutada üldiselt kõikjal ja väga erinevate asjade jaoks ka mängude arendamiseks või kiipkaarti lahendustes.
+                    Javat kasutatakse ka suure jõudlusega andmetöötluses andmete salvestamiseks ja protsessimiseks.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Keeli tutvustav koodi kastid, kus igas kastis on väike koodijupp vastavalt keelele -->
+    <div class="konteiner">
+        <div class="koodi-box" id="ruby-box">
+            <div class="koodi-pealis">
+                <span class="koodi-tiitel">RUBY</span>
+            </div>
+            <div class="koodi-sisu">
+                <pre><code>
+class Numeric
+    def liida(x)
+        self.+(x)
+    end
+end
+                  
+y = 5.liida(6)
+puts "Ruby: y on nüüd võrdne #{y}"
+                  </code></pre>
+            </div>
+        </div>
+
+        <div class="koodi-box" id="php-box">
+            <div class="koodi-pealis">
+                <span class="koodi-tiitel">PHP</span>
+            </div>
+            <div class="koodi-sisu">
+                <pre><code>
+?php
+$tsitaadid = [
+    "Ära oota, kuni raud on kuum, 
+    vaid tee see kuumaks, lüües. - William Butler Yeats",
+    "Elu on see, mis juhtub, 
+    kui sa oled hõivatud teiste plaanide tegemisega. - John Lennon",
+    "Alati tundub võimatu, kuni see on tehtud. - Nelson Mandela"
+];
+
+$juhuslikTsitaat = $tsitaadid[array_rand($tsitaadid)];
+
+echo "{$juhuslikTsitaat}";
+?
+                </code></pre>
+            </div>
+        </div>
+
+        <div class="koodi-box" id="java-box">
+            <div class="koodi-pealis">
+                <span class="koodi-tiitel">JAVA</span>
+            </div>
+            <div class="koodi-sisu">
+                <pre><code>
+public class Laul {
+
+    public static void main(String[] args) {
+        for (int pudelid = 99; pudelid > 0; pudelid--) {
+            System.out.println(pudelid + " pudelit õlut seinakapis,");
+            System.out.println(pudelid + " pudelit õlut.");
+            System.out.println("Üks võetakse maha, antakse edasi,");
+            System.out.println((pudelid - 1) + " pudelit õlut alles.\n");
+        }
+        System.out.println("Enam pole ühtegi pudelit õlut seinakapis!");
+    }
+}        
+                </code></pre>
+            </div>
         </div>
     </div>
     <div class="footer">
         <p>©2023 kõik õigused kaitstud</p>
     </div>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/backend.js"></script>
 </body>
 </html>

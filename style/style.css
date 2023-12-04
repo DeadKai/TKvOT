@@ -1,3 +1,4 @@
+/* Üldine väljanägemine kõikidel vahelehtedel ja vastavate funktsioonide kujundus */
 body {
     background-color: #726A5A;
     font-family: "Ubuntu Mono", monospace;
@@ -5,6 +6,12 @@ body {
     font-size: 20px;
     line-height: 1.5;
     padding: 20px;
+}
+
+/* Lisab vahelehtedele äärised */
+* {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
@@ -43,6 +50,7 @@ h1 {
     width: 50px;
 }
 
+/* Menüüriba tekst */
 a{
     text-decoration: none;
     color: #1A1F1F;
@@ -68,16 +76,6 @@ a:hover{
 .filter-black{
     filter: invert(8%) sepia(8%) saturate(1021%) hue-rotate(131deg) brightness(96%) contrast(90%);
 }
-* {
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.language {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
 
 .language img {
     width: 200px;
@@ -88,20 +86,15 @@ a:hover{
     flex: 1;
 }
 
-.language {
-    border: 2px solid #1A1F1F;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-/* Dark mode styling */
+/* Dark-mode nupust tulenevad muudatused vahelehtedel */
 body.dark-mode {
     background: #2c3e50;
     color: #ecf0f1;
 }
 
-body.dark-mode .header {
-    background: #34495e;
+body.dark-mode .button2{
+    color: #ecf0f1;
+    background: #2c3e50;
 }
 
 body.dark-mode .header a {
@@ -111,8 +104,15 @@ body.dark-mode .header a {
 body.dark-mode .header .header-logo {
     filter: invert(1);
 }
+body.dark-mode .koodi-sisu code {
+    color: #ecf0f1
+}
 
-/* Button styling */
+body.dark-mode .koodi-pealis {
+    color: #ecf0f1
+}
+
+/* Dark mode nupp */
 .dark-mode-toggle {
     margin-left: 0;
     padding: 0;
