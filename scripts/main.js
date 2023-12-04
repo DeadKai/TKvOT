@@ -30,3 +30,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     });
 });
+// js kirjutamisel on kasutatud https://www.w3schools.com/js/default.asp ja chatgpt abi
