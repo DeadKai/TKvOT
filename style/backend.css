@@ -67,10 +67,10 @@ body.dark-mode .koodi-sisu code {
 body.dark-mode .koodi-pealis {
     color: #ecf0f1
 }
+
 body.dark-mode .koodi-btn {
     color: #ecf0f1
 }
-
 
 .koodi-btn {
     cursor: pointer;
@@ -84,10 +84,7 @@ body.dark-mode .koodi-btn {
     margin-bottom: 10px;
     border-radius: 4px;
 }
-.koodi-btn {
-    background-color: #4CAF50; /* Change background color when clicked */
-    color: #fff; /* Change text color when clicked */
-  }
+
 .koodi-btn:hover {
     background-color: #757575;
 }
