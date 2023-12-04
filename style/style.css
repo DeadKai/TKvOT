@@ -104,13 +104,6 @@ body.dark-mode .header a {
 body.dark-mode .header .header-logo {
     filter: invert(1);
 }
-body.dark-mode .koodi-sisu code {
-    color: #ecf0f1
-}
-
-body.dark-mode .koodi-pealis {
-    color: #ecf0f1
-}
 
 /* Dark mode nupp */
 .dark-mode-toggle {
